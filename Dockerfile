@@ -3,7 +3,7 @@ ARG RUBY_VERSION=3.4.5
 FROM ruby:$RUBY_VERSION-slim
 
 # Rails app lives here
-WORKDIR /rails
+WORKDIR /app
 
 # Install system deps
 RUN apt-get update -qq && \
